@@ -1,0 +1,15 @@
+curl --location --request POST 'https://fcm.googleapis.com/fcm/send' \
+--header 'Authorization: key=AAAA_9_eT7w:APA91bEAVm9NSpX_eGSVDrpn0bCOqV9vCh8CEgU0xmp1g0Oo_TXqVUNRid7EqddvsNI2XO62Ra9wxwBxG0r-t5-LFVr5ecmYzFULOZrSPFXqg2iU9NFrJiw2HaxCLUsf2ukTiDCsoi3Y' \
+--header 'Content-Type: application/json' \
+--header 'Content-Type: text/plain' \
+--data-raw '{
+    "to": "dujmFnnaQgSceIprQC8eK7:APA91bGZphgcLARcXIORflzdMHPnIlJte7am-iCVJg-PkZV3OXmwPKvur6Jq5x0vTck6iYzh1sg-AoVVMIvxS9inrkEcnFeSaacddmXiZ-OjuffXpKEvy7yBKMr9HLqnFEg2pYmti2Cy",
+    "notification": {
+        "body": "Body of Your Notification",
+        "title": "Title of Your Notification",
+        "android_channel_id": "500",
+        "sound": "default"
+    },
+    "priority": "high",
+    "content_available": true
+}'
